@@ -115,6 +115,13 @@ document.body.onscroll = moveCamera;
 moveCamera();
 
 
+
+window.addEventListener("resize", function(e){
+    renderer.setSize(window.innerWidth, window.innerHeight)
+})
+
+
+
 function animate() {
     requestAnimationFrame(animate);
     torus.rotation.x += 0.01;
