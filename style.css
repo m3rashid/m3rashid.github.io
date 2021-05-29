@@ -1,0 +1,115 @@
+@import url("https://use.typekit.net/jmk3xov.css");
+
+:root {
+  --dark-bg: rgba(15, 15, 15, 0.877);
+  --spacing: 200px;
+
+  font-family: brandon-grotesque, sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+body::-webkit-scrollbar{
+  display: none;
+}
+
+.webgl{
+  position: fixed;
+  top: 0;
+  left: 0;
+}
+
+main{
+  position: absolute;
+  width: 100vw;
+  color: white;
+  z-index: 99;
+  width: 100%;
+  margin: 0px auto;
+  padding: 60px 0px;
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+}
+
+h1, h2, h3, blockquote{
+  font-family: elevon, sans-serif;
+  font-weight: 700;
+  font-style: normal;
+}
+
+header{
+  background: var(--dark-bg);
+  grid-column: 2/span 5;
+  font-size: 2rem;
+  margin-bottom: var(--spacing);
+}
+
+section{
+  grid-column: 2/8;
+  padding: 1rem;
+  background: var(--dark-bg);
+  font-size: 1.3rem;
+  line-height: 1.5;
+  margin-bottom: var(--spacing);
+}
+
+blockquote{
+  margin: 0;
+  padding: 0;
+  grid-column: 2/span 9;
+  margin-bottom: var(--spacing);
+  line-height: 2.2;
+}
+
+blockquote p{
+  color: black;
+  background-color: rgba(255, 255, 255, 0.788);
+  font-size: 2.2rem;
+  display: inline;
+  line-height: 1.1;
+  padding: 2px 10px 2px 10px;
+}
+.left{
+  grid-column: 6/12;
+}
+
+.test{
+  color: #0f8faf;
+}
+
+.card{
+  width: 30%;
+  border-radius: 10px;
+  display: inline-block;
+  border: 2px solid rgba(0, 0, 0, 0.5);
+  padding: 5px;
+  margin-bottom: 10px;
+}
+
+@media(max-width: 768px){
+  .card{
+    display: block;
+    width: 95%;
+    /* margin-right: 0; */
+  }
+}
+.card img{
+  width: 100%;
+  border-radius: 6px;
+}
+.card p{
+  font-size: 1.2rem;
+}
+.card button a{
+  text-decoration: none;
+  color: white;
+  font-size: 1.2rem;
+}
+.card button{
+  background-color: rgb(98, 115, 126);
+  border: none;
+  outline: none;
+  /* margin-top: 5px; */
+  padding: 5px;
+  border-radius: 5px;
+}
